@@ -1,0 +1,143 @@
+HTML Notes
+Headings
+<h1>, <h2>, <h3>, <h4>
+Used for different levels of headings.
+
+Links
+<a href="link">Link Name</a>
+Used to add links to a webpage.
+
+Absolute links: Links to other websites.
+Relative links: Links within your own website.
+To open the link in a new tab:
+
+<a href="link" target="_blank">Link Name</a>
+Line Break & Horizontal Line
+<br>
+Moves text to the next line.
+
+<hr>
+Adds a horizontal line between elements.
+
+Images
+<img src="image-link" alt="Image description">
+alt → Displays text if the image fails to load.
+height → Sets the image height.
+width → Sets the image width.
+To use an image as a link:
+
+<a href="destination-link">
+    <img src="image-link" alt="Clickable Image">
+</a>
+Text Formatting
+<b>Bold</b>  
+<i>Italic</i>  
+<u>Underline</u>
+<big>Big Text</big>  
+<small>Small Text</small>
+Subscript & Superscript
+<sub>H2O</sub>  
+<sup>3²</sup>
+<sub> → For subscript (e.g., H₂O).
+<sup> → For superscript (e.g., 3² = 9).
+Preformatted Text
+<pre>
+  This preserves
+  spaces and line breaks exactly as written.
+</pre>
+Page Structure Elements
+<header>Header Section</header>  
+<main>Main Content</main>  
+<footer>Footer Section</footer>
+<header> → Contains the top section of the page (e.g., navigation).
+<main> → Contains the main content.
+<footer> → Contains the bottom section (e.g., copyright info).
+Sections & Articles
+<section>Section Content</section>  
+<article>Article Content</article>
+<section> → Groups related content.
+<article> → Used for standalone content (e.g., blog posts).
+Div & Span
+<div>Container for multiple elements</div>  
+<span>Inline container for small text or elements</span>
+<div> → A block container (like a box).
+<span> → An inline container (only wraps the text or element inside it).
+Lists
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+</ul>
+<ul> → Unordered list (bullet points).
+<ol>
+  <li>Item 1</li>
+  <li>Item 2</li>
+</ol>
+<ol> → Ordered list (numbered items).
+To create a nested list:
+
+<ol>
+  <li>Item 1</li>
+  <ul>
+    <li>Sub-item 1</li>
+  </ul>
+</ol>
+To change numbering style:
+
+<ol type="A">
+  <li>Item 1</li>
+</ol>
+Types: "1" (default), "A", "a", "I", "i".
+
+Tables
+<table>
+  <caption>Table Title</caption>
+  <tr>
+    <th>Header 1</th>
+    <th>Header 2</th>
+  </tr>
+  <tr>
+    <td>Data 1</td>
+    <td>Data 2</td>
+  </tr>
+</table>
+<tr> → Table row.
+<th> → Table header (bold by default).
+<td> → Table data.
+<caption> → Adds a title to the table.
+Forms & Inputs
+<form>
+  <input type="text" placeholder="Enter your name">
+  <input type="password" placeholder="Enter password">
+  <input type="submit" value="Submit">
+</form>
+<input type="password"> → Hides input as dots.
+<input type="submit"> → Button to submit the form.
+Radio Buttons (Choose One)
+
+<input type="radio" name="gender" value="male" id="male">
+<label for="male">Male</label>
+
+<input type="radio" name="gender" value="female" id="female">
+<label for="female">Female</label>
+The name attribute ensures only one option is selected at a time.
+Checkbox (Multiple Selections)
+
+<input type="checkbox" name="hobby" value="sports" id="sports">
+<label for="sports">Sports</label>
+
+<input type="checkbox" name="hobby" value="music" id="music">
+<label for="music">Music</label>
+Textarea (For Long Text Input)
+
+<textarea name="feedback" id="feedback" placeholder="Enter your feedback"></textarea>
+Multimedia
+Embed Videos
+
+<video src="video.mp4" controls loop autoplay width="400" height="300"></video>
+controls → Shows play/pause buttons.
+loop → Repeats the video.
+autoplay → Starts playing automatically.
+Embed Other Websites or Videos
+
+<iframe src="https://example.com" width="600" height="400"></iframe>
+Used to embed external websites, YouTube videos, etc.
